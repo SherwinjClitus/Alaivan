@@ -126,6 +126,7 @@ body {
 }
 .hero-box__book__checkin input {
   margin-top: 10px;
+  height: 25px;
 }
 .hero-box__book__checkout {
   display: flex;
@@ -133,6 +134,7 @@ body {
 }
 .hero-box__book__checkout input {
   margin-top: 10px;
+  height: 25px;
 }
 .hero-box__book__travelers {
   display: flex;
