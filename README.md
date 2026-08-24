@@ -2,6 +2,8 @@
 
 A modern, responsive travel booking landing page built with pure HTML and CSS. Discover destinations, explore deals, and plan your perfect trip.
 
+LIVE LINK [https://sherwinjclitus.github.io/Alaivan/]
+
 ## 📋 Project Overview
 
 **Alaivan** is a static travel and tourism website featuring:
