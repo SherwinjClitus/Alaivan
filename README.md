@@ -102,7 +102,7 @@ Alaivan/
 
 ## 🚀 How to Run
 
-**Live Demo:** [Add your live link here]
+**Live Demo:** [https://sherwinjclitus.github.io/Alaivan/]
 
 Simply open `index.html` in any modern web browser. No installation or build process required.
 
