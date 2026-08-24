@@ -1,0 +1,462 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Inter", sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 45px;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.95);
+  margin-bottom: 10px;
+}
+.navbar__s1 {
+  color: #00336c;
+}
+.navbar__s2 {
+  display: flex;
+}
+.navbar__s2__links {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  color: black;
+}
+.navbar__s2__links li:hover{
+  cursor: pointer;
+  color: #03a6ef;
+}
+.navbar__s3 {
+  background-color: #00336c;
+  color: rgba(255, 255, 255, 0.95);
+  padding: 10px;
+  border-radius: 10px;
+}
+.navbar__s3:hover {
+  cursor: pointer;
+  background-color: #03a6ef;
+  transition: 0.5ms;
+  outline: solid 1px #00336c;
+}
+
+/* HERO */
+.hero {
+  min-height: 100vh;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.25) 0%,
+      rgba(0, 0, 0, 0.25) 70%,
+      rgba(255, 255, 255, 0) 85%,
+      #ffffff 100%
+    ),
+    url("./images/pexels-gya-den-768256-2303781.jpg");
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.hero-content {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+.hero-content__moto {
+  font-size: 64px;
+}
+.hero-content__para {
+  font-weight: light;
+}
+.hero-box {
+  background-color: white;
+  width: 70%;
+  height: 60%;
+  align-items: center;
+  padding: 30px;
+  margin: 40px auto 0;
+  border-radius: 20px;
+}
+.hero-box__travel {
+  display: flex;
+  gap: 30px;
+  color: gray;
+  margin-bottom: 30px;
+}
+.hero-box__travel__stays:hover,
+.hero-box__travel__flight:hover,
+.hero-box__travel__hotel:hover,
+.hero-box__travel__restaurant:hover {
+  cursor: pointer;
+  color: #03a6ef;
+  transition: 0.2ms;
+}
+
+.hero-box__book {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.hero-box__book__destination {
+  display: flex;
+  gap: 5px;
+}
+.hero-box__book__destination__s2__input input {
+  border: none;
+  height: 30px;
+  padding: 5px;
+  width: 120px;
+}
+.hero-box__book__destination__s2__input input:focus {
+  outline-color: #03a6ef;
+}
+.hero-box__book__checkin {
+  display: flex;
+  gap: 5px;
+}
+.hero-box__book__checkin input {
+  margin-top: 10px;
+}
+.hero-box__book__checkout {
+  display: flex;
+  gap: 5px;
+}
+.hero-box__book__checkout input {
+  margin-top: 10px;
+}
+.hero-box__book__travelers {
+  display: flex;
+  gap: 5px;
+}
+.hero-box__book__travelers__s2__input input {
+  border: none;
+  height: 30px;
+  padding: 5px;
+  width: 120px;
+}
+.hero-box__book__travelers__s2__input input:focus {
+  outline-color: #03a6ef;
+}
+
+.hero-box__book__destination,
+.hero-box__book__checkin,
+.hero-box__book__checkout,
+.hero-box__book__travelers{
+    flex:1;
+    min-width:150px;
+}
+.hero-box__book__btn{
+  background-color: #00336c;
+  color: rgba(255, 255, 255, 0.95);
+  padding: 10px;
+  border-radius: 10px;
+  height: 20px;
+  width: 140px;
+  text-align: center;
+
+}
+.hero-box__book__btn:hover {
+  cursor: pointer;
+  background-color: #03a6ef;
+  transition: 0.5ms;
+  outline: solid 1px #00336c;
+}
+
+
+/*DESTINATION SECTION*/
+.destinations{
+  padding: 30px;
+}
+.destination-title{
+  padding: 60px;
+  max-width: 1200px;
+  margin: auto;
+}
+.destination-title h2{
+  width: 100%;
+}
+.destination-title p{
+  width: 100%;
+}
+.destination-cards{
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 250px 250px;
+  gap: 20px;
+  margin-top: 20px;
+}
+.card:nth-child(1){
+  grid-column: 1;
+  grid-row: span 2;
+}
+.card:nth-child(2){
+  grid-column: 2;
+}
+.card:nth-child(3){
+  grid-column: 3;
+  grid-row: span 2;
+}
+.card:nth-child(4){
+  grid-column: 2;
+}
+.card{
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.card img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+.card:hover img{
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+/*NEXT-TRIP*/
+.next-trip__header{
+  margin: auto;
+  max-width: 1200px;
+  padding: 30px;
+}
+.next-trip__header__categories{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+.next-trip__header__categories p:hover{
+  color: #03a6ef;
+  cursor: pointer;
+}
+.destination-slider{
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-evenly;
+}
+.destination-card{
+  width: 300px;
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 10px;
+}
+.destination-card__info{
+  padding: 10px;
+}
+.destination-card__info h3{
+  margin-bottom: 10px;
+}
+.destination-card img{
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  object-position:center;
+  display: block;
+  margin-bottom: 15px;
+  transition: transform 0.4s ease;
+}
+.destination-card:hover{
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+/*LAST MINUTE*/
+.last-minute__header{
+  margin: auto;
+  max-width: 1200px;
+  padding: 30px;
+}
+.last-minute__header h1{
+  margin-bottom: 10px;
+}
+.deal-slider{
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-evenly;
+}
+.deal-card{
+  width: 300px;
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 10px;
+}
+.deal-card__info{
+  padding: 10px;
+}
+.deal-card__info h3{
+  margin-bottom: 10px;
+}
+.deal-card__info p{
+  font-weight: lighter;
+  color: grey;
+  margin: 5px;
+}
+.deal-card img{
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  object-position:center;
+  display: block;
+  margin-bottom: 15px;
+  transition: transform 0.4s ease;
+}
+.deal-card:hover{
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+/*FOOTER*/
+.footer {
+  background-color: #0b0b0b;
+  color: white;
+  padding: 50px 8% 20px;
+}
+.footer__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 50px;
+}
+
+.footer__brand h2 {
+  color: white;
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+
+.footer__nav {
+  display: flex;
+  gap: 25px;
+}
+
+.footer__nav a {
+  color: #d1d5db;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.footer__nav a:hover {
+  color: #03a6ef;
+}
+.footer__links {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  margin-bottom: 50px;
+}
+.footer__column {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.footer__column h3 {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: white;
+}
+.footer__column a {
+  color: #9ca3af;
+  text-decoration: none;
+  font-size: 13px;
+  transition: color 0.2s ease;
+}
+.footer__column a:hover {
+  color: #03a6ef;
+}
+.footer__bottom {
+  border-top: 1px solid #262626;
+  padding-top: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__socials {
+  display: flex;
+  gap: 20px;
+}
+.footer__socials a {
+  color: #9ca3af;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.footer__socials a:hover {
+  color: #03a6ef;
+}
+.footer__legal {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.footer__legal a,
+.footer__legal span {
+  color: #9ca3af;
+  text-decoration: none;
+  font-size: 12px;
+}
+.footer__legal a:hover {
+  color: #03a6ef;
+}
+
+/* MEDIA QUERY*/
+@media (max-width: 800px){
+  .navbar__s2__links{
+    display: none;
+  }
+}
+
+
+/* TABLET */
+@media (max-width: 900px) {
+
+    .destination-slider,
+    .deal-slider {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .destination-card,
+    .deal-card {
+        width: 100%;
+    }
+}
+
+
+/* MOBILE */
+@media (max-width: 600px) {
+
+    .destination-slider,
+    .deal-slider {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .destination-card,
+    .deal-card {
+        width: 100%;
+    }
+}
